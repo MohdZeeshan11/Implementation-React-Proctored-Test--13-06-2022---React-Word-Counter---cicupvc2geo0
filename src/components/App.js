@@ -15,7 +15,7 @@ console.log(size);
     <>
     <div className='container'>
        <h3>Font size Picker</h3>
-      <input type="range" id="vol" name="vol" min="16" max={size}
+      <input type="range" id="vol" name="vol" min="0" max="50"
       onChange={function(e){
         // console.log(e.target.value);
         setSize(e.target.value)
