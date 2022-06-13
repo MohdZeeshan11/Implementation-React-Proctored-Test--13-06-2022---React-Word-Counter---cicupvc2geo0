@@ -35,8 +35,8 @@ console.log(size);
         }}></textarea>
     </div>
 
-    <div id="word-counter" className='container'>Total number of words written {text}</div>
-    <div id="char-counter" className='container'>Total number of characters used {word}</div>
+    <div id="word-counter" className='container'>Total number of words written {word}</div>
+    <div id="char-counter" className='container'>Total number of characters used {text}</div>
     </>
   )
 }
