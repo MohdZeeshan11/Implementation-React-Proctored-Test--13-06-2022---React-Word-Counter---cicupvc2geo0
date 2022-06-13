@@ -6,7 +6,7 @@ const App = () => {
 const[text,setText] = useState();
 const[word,setWord] = useState();
 const[limit,setLimit] = useState(50);
-const[size,setSize] = useState(16);
+const[size,setSize] = useState();
 console.log(size);
 // console.log(text);
 // let s = size;
@@ -15,7 +15,7 @@ console.log(size);
     <>
     <div className='container'>
        <h3>Font size Picker</h3>
-      <input type="range" id="vol" name="vol" min="0" max="50"
+      <input type="range" id="vol" name="vol" min="16" max={size}
       onChange={function(e){
         // console.log(e.target.value);
         setSize(e.target.value)
